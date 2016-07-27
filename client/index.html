@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Покемон-радар</title>
+  <meta charset="utf-8">
+  <meta name="title" content="Покемон-радар">
+  <meta name="description" content="Показывает покемонов рядом с вами на карте">
+  <meta property="og:site_name" content="pokemon.dadata.ru">
+  <meta property="og:title" content="Покемон-радар для России">
+  <meta property="og:description" content="Показывает покемонов рядом с вами на карте">
+  <meta property="og:image" content="https://pokemon.dadata.ru/cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Покемон-радар для России">
+  <meta name="twitter:description" content="Показывает покемонов рядом с вами на карте">
+  <meta name="twitter:image:src" content="https://pokemon.dadata.ru/cover.jpg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link href="https://cdn.jsdelivr.net/jquery.suggestions/16.6/css/suggestions.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <section class="layout">
+    <div class="layout__intro intro">
+      <div class="intro__title">
+        <h1>Покемон-радар</h1>
+      </div>
+      <div class="intro__author">
+        <a href="https://dadata.ru" title="Сделано в DaData.ru">
+          <img class="intro__logo" width="120" height="28" src="dadata.png" alt="Сделано в DaData.ru">
+        </a>
+      </div>
+    </div>
+    <div class="layout__search search">
+      <input id="address" class="search__address" type="text" placeholder="🔍 Введите сюда адрес и увидите покемонов рядом">
+    </div>
+    <div class="layout__map">
+      <div id="map" class="map"></div>
+      <div id="status" class="status" data-map="false" data-pokemon="false">
+        <div>
+          <span class="status__message" data-message>Загружаю карту и покемонов...</span>
+          <a href="#" class="status__refresh" style="display: none;" data-refresh>обновить</a>
+        </div>
+      </div>
+      <div class="social">
+        Рассказать друзьям:&nbsp;&nbsp;
+        <div class="social-likes">
+          <div data-service="facebook" title="Поделиться в Фейсбуке"></div>
+          <div data-service="twitter" title="Твитнуть"></div>
+          <div data-service="vkontakte" title="Поделиться во Вконтакте"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.suggestions/16.6/js/jquery.suggestions.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="app.js"></script>
+  <script async src="https://npmcdn.com/social-likes-next/dist/social-likes.min.js"></script>
+</body>
+</html>
