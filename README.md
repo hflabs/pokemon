@@ -1,6 +1,6 @@
 # Покемон-радар для России
 
-Показывает покемонов на карте рядом с человеком.
+Показывает покемонов на карте рядом с человеком. Доступен [как сервис](https://pokemon.dadata.ru/), либо в исходниках (см. ниже).
 
 <a href="https://pokemon.dadata.ru"><img alt="Покемон-радар" src="https://habrastorage.org/files/cf1/ed8/d39/cf1ed8d394ae4d94a647ea7c58adbf64.jpg"/></a>
 
@@ -20,15 +20,13 @@
 
 # Настройка
 
-1. Указать учетные записи для серверов покемонов в server/settings.py.
-2. Указать АПИ-ключ [подсказок Дадаты](https://dadata.ru/suggestions) в client/dadata.js
-3. Собрать клиента:
+1. Указать учетные записи для серверов покемонов в `server/settings.py`.
+2. Указать АПИ-ключ [подсказок Дадаты](https://dadata.ru/suggestions) в `client/dadata.js`.
+3. Собрать клиента и запустить сервер:
 ```
 npm install
 gulp build
-```
-4. Запустить сервер
-```
+
 pip install -r server/requirements.txt
 cd server && run.sh
 ```
