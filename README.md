@@ -30,3 +30,5 @@ gulp build
 pip install -r server/requirements.txt
 cd server && run.sh
 ```
+
+В браузере открыть `http://localhost:5000/static/index.html`
